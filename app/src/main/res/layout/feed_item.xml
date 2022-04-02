@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/feed_background"
+    android:layout_marginBottom="2dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textSize="28sp"
+        android:textColor="@color/black"
+        android:paddingStart="16dp"
+        android:paddingEnd="31dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/test_text"/>
+
+    <ImageView
+        android:id="@+id/position_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/position"/>
+
+    <TextView
+        android:id="@+id/loc_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/position_icon"
+        app:layout_constraintTop_toTopOf="@id/position_icon"
+        app:layout_constraintBottom_toBottomOf="@id/position_icon"
+        android:layout_marginLeft="6dp"
+        android:text="Россия, Москва"/>
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/loc_name"
+        app:layout_constraintLeft_toLeftOf="@id/position_icon"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/feed_image"/>
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="11sp"
+        app:layout_constraintTop_toBottomOf="@id/image"
+        app:layout_constraintLeft_toLeftOf="@id/image"
+        android:layout_marginTop="16dp"
+        android:paddingBottom="16dp"
+        android:text="@string/kshn13"/>
+
+    <ImageView
+        android:id="@+id/like_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginEnd="16dp"
+        android:paddingBottom="16dp"
+        android:src="@drawable/like_icon"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
