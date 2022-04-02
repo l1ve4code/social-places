@@ -22,7 +22,7 @@
 
 ***Авторизация/ Регистрация***
 
-| Авторизацтя <img src="docs_resources/login.png"> | Регистрация <img src="docs_resources/reg_1.png"> | Регистрация <img src="docs_resources/reg_2.png"> |
+| Авторизация <img src="docs_resources/login.png"> | Регистрация <img src="docs_resources/reg_1.png"> | Регистрация <img src="docs_resources/reg_2.png"> |
 |--------------------------------------------------|--------------------------------------------------|-------------------------------------------------|
 
 ***Создание/ Просмотр постов***
